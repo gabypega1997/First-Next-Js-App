@@ -4,7 +4,10 @@ function MainNavigation() {
 
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>React Meetups</div>
+      <div className={classes.logo}>
+        
+        React Meetups
+        </div>
       <nav>
         <ul>
           <li>

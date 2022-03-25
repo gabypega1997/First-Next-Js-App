@@ -1,33 +1,8 @@
-import Head from "next/head"
+import Head from "next/head";
 import { Fragment } from "react";
 import { MongoClient } from "mongodb";
-    // www.our-domain.com
-    import MeetupList from "../components/meetups/MeetupList"
+import MeetupList from "../components/meetups/MeetupList"
 
-
-    // const DUMMY_MEETUPS = [
-    //     {
-    //         id : "m1",
-    //         title : "A first Meetup",
-    //         image: "https://pix8.agoda.net/hotelImages/5779037/-1/d78c7594992ea3237c3c548647861e5c.jpg?s=1024x768" ,
-    //         address:"MuhlWeg 7 , 65520 Roma",
-    //         description:"This is first meetup!"
-    //     },
-    //     {
-    //         id : "m2",
-    //         title : "A second Meetup",
-    //         image: "https://pix8.agoda.net/hotelImages/577/5779037/5779037_18090514410067843231.jpg?s=1024x768" ,
-    //         address:"MuhlWeg 7 , 65520 Itali",
-    //         description:"This is three meetup!"
-    //     },
-    //     {
-    //         id : "m3",
-    //         title : "A three Meetup",
-    //         image: "https://q-xx.bstatic.com/xdata/images/hotel/840x460/315860398.jpg?k=4b32a58011c1282ced6ffe7337456a6728d0e08106d77b4df3de08281932d650&o=" ,
-    //         address:"MuhlWeg 7 , 65520 Romania",
-    //         description:"This is three meetup!"
-    //     }
-    // ];
 function HomePage(props) {
 
 
@@ -39,7 +14,7 @@ function HomePage(props) {
                     name= "description"
                     content = "Browse a huge list of highly active React meetups!"
                     >
-                     </meta>
+                    </meta>
                 </Head>
                 <MeetupList meetups = {props.meetups} />
         </Fragment>
